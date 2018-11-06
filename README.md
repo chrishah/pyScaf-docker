@@ -22,7 +22,7 @@ $ docker run -it -v $(pwd):/home/working -w /home/working --rm chrishah/pyscaf-d
 -t 6 -f genome.illumina.fasta -n reads.fastq.gz -o Illumina.MinION.pyscaf
 ```
 
-You can also enter the container environment and work within it. All executables, e.g. `run_BUSCO.py`, `generate_plots.py`, are in the `PATH`.
+You can also enter the container environment and work within it. All executables, e.g. `pyScaf.py`, `lastal`, are in the `PATH`.
 ```bash
 $ docker run -it --rm --net=host -v $(pwd):/home/working -w /home/working chrishah/pyscaf-docker /bin/bash
 ```
